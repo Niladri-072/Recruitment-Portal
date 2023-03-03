@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h2>Create Your Account</h2>
+	</div>
+	<form name="signupForm" onsubmit="return validateForm()">
+		<div class="input-group">
+			(Username has to be unique)<label>Username</label>
+			<input type="text" name="username" id="username" required>
+			<span id="error"></span>
+		</div>
+		<div class="input-group">
+			<label>Password</label>(Passwords should have : atleast 1 uppercase letter,
+			 atleast 1 special character , 
+			 0.atleast 8 characters long)
+			<input type="password" name="password" id="password" required>
+			<span id="password_error"></span>
+		</div>
+		
+		<button type="submit" class="btn" onclick="window.location.href='Login.html';">Submit</button>
+	</form>
+</body>
+</html>
